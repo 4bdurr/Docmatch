@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#FFBDBD"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foregroundGravity="center_vertical"
+    tools:context=".patient">
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/classified"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="28dp"
+        app:cornerRadius="10dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="10sp"
+        android:layout_marginEnd="100dp"
+        android:backgroundTint="#5A4F4F"
+        android:fontFamily="@font/cormorant_garamond_bold"
+        android:text="Ambil Foto KTP/KTM"
+        android:textAllCaps="false"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="30sp"
+        android:gravity="center"
+        android:layout_marginEnd="150dp"
+        android:fontFamily="@font/cormorant_garamond_bold"
+        android:text="Biodata"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/fullname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="90sp"
+        android:layout_marginEnd="130dp"
+        android:fontFamily="@font/cormorant_garamond_bold"
+        android:text="Nama Lengkap"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/fullnameBox"
+        android:layout_width="361dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fullname"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="Nama Lengkap"
+        android:padding="15dp"
+        android:textColorHint="@android:color/darker_gray" />
+
+
+    <TextView
+        android:id="@+id/phonenumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fullnameBox"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10sp"
+        android:layout_marginEnd="130dp"
+        android:fontFamily="@font/cormorant_garamond_bold"
+        android:text="Nomor Telepon"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/phonenumberBox"
+        android:layout_width="361dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phonenumber"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="Nomor Telepon"
+        android:padding="15dp"
+        android:textColorHint="@android:color/darker_gray" />
+
+
+    <TextView
+        android:id="@+id/DOB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phonenumberBox"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10sp"
+        android:layout_marginEnd="130dp"
+        android:fontFamily="@font/cormorant_garamond_bold"
+        android:text="Tempat, Tanggal Lahir"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/DOBBox"
+        android:layout_width="361dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/DOB"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="Tempat, Tanggal Lahir"
+        android:padding="15dp"
+        android:textColorHint="@android:color/darker_gray" />
+
+
+    <TextView
+        android:id="@+id/classified"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/DOBBox"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10sp"
+        android:layout_marginEnd="30dp"
+        android:text="Foto KTP / KTM:"
+        android:fontFamily="@font/cormorant_garamond_bold"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="281dp"
+        android:layout_height="118dp"
+        android:layout_below="@+id/button2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="100dp" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10sp"
+        android:layout_marginEnd="30dp"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/buttonUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/result"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/white"
+        android:layout_marginEnd="100dp"
+        android:backgroundTint="#5A4F4F"
+        android:fontFamily="@font/cormorant_garamond_bold"
+        android:text="Update Biodata"
+        android:textAllCaps="false"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

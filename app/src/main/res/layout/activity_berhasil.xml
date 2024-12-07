@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#F4A5A5"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/resultImageView2"
+        android:layout_width="match_parent"
+        android:layout_height="450sp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="2dp"
+        android:src="@drawable/savedocmatch" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resultImageView2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="40sp"
+        android:fontFamily="@font/cormorant_garamond_bold"
+        android:gravity="center"
+        android:text="Berhasil Update Biodata"
+        android:textColor="#000000"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="196dp"
+        android:layout_below="@+id/resultImageView2"
+        android:layout_marginTop="83dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/backbtn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#5A4F4F"
+            android:gravity="center"
+            android:text="Back to Main"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</RelativeLayout>
